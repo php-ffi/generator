@@ -4,7 +4,7 @@ A set of classes for generating PHP FFI-compatible code.
 
 ## Requirements
 
-- PHP >= 7.4
+- PHP >= 8.1
 
 ## Installation
 
