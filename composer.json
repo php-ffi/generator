@@ -1,0 +1,51 @@
+{
+    "name": "ffi/generator",
+    "type": "library",
+    "description": "PHP FFI Code Generator",
+    "license": "MIT",
+    "keywords": ["ffi", "generator", "code", "scaffolding"],
+    "support": {
+        "source": "https://github.com/php-ffi/generator",
+        "issues": "https://github.com/php-ffi/generator/issues",
+        "docs": "https://github.com/php-ffi/generator/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Nesmeyanov Kirill",
+            "email": "nesk@xakep.ru",
+            "homepage": "https://serafimarts.ru",
+            "role": "maintainer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-ctype": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FFI\\Generator\\": "src"
+        }
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.22",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FFI\\Generator\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
